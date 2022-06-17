@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M3D Print - Comenzar proyecto</title>
+        <!--FAVICON-->
+        <link rel="shortcut icon" href="./../assets/icono.PNG"/>
+        <!--CSS-->
+        <link rel="stylesheet" href="./../styles/styles.css"/>
+        <!--FONT-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <!--RESPONSIVE-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <section class="comenzarProyecto__grid">
+        <!--Inicio de HEADER--> 
+            <header>
+                <div class="header__logo">
+                    <a href="./../index.html">
+                        <img id="logo" src="./../assets/logo.PNG" alt="logo" width="200px" title="Logo"/>     
+                    </a>  
+                </div>
+                <ul class="header__ul">
+                    <li class="header__ul__li">
+                        <a class="header__ul__li__a" href="./../index.html">INICIO</a>
+                    </li>   
+                    <li class="header__ul__li">
+                        <a class="header__ul__li__a" href="./trabajos.html">TRABAJOS</a>
+                    </li>  
+                    <li class="header__ul__li">
+                        <a class="header__ul__li__a" href="./diseno3d.html">DISEÑO 3D</a>
+                    </li>  
+                    <li class="header__ul__li">
+                        <a class="header__ul__li__a" href="./impresion3d.html">IMPRESION 3D</a>
+                    </li>  
+                    <li class="header__ul__li">
+                        <a class="header__ul__li__a" href="./comenzarproyecto.html">COMENZAR PROYECTO</a>
+                    </li>  
+                </ul>
+            </header>
+            <!--Cierre de HEADER-->
+            <!--Inicio de CONTENT--> 
+            <div class="contenedorTitulo">
+                <h1 class="contenedorTitulo__tituloPrincipal">El primer paso para comenzar tu proyecto, es ponerte en contacto con nosotros.</h1>
+            </div>
+            <div class="comenzarProyecto__ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.6374753876107!2d-61.54134118546606!3d-30.952687981071335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943545164070c9a7%3A0xb37587cf045ca7d3!2sParque%20Industrial!5e0!3m2!1ses-419!2sar!4v1655037627449!5m2!1ses-419!2sar"></iframe>
+            </div>
+            <div class="comenzarProyecto__contenedorFormulario">
+                <form class="comenzarProyecto__contenedorFormulario__formulario">
+                    <legend class="comenzarProyecto__contenedorFormulario__tituloFormulario">Empezá tu proyecto</legend>
+                    <div class="comenzarProyecto__contenedorFormulario__datos">
+                        <label for="nombre"> Nombre y Apellido</label>
+                        <Input type="text" id="nombre"></Input>
+                    </div>
+                    <div class="comenzarProyecto__contenedorFormulario__datos">
+                        <label for="email">Email</label>     
+                        <Input type="text" id="email"></Input>
+                    </div>
+                    <div class="comenzarProyecto__contenedorFormulario__datos">
+                        <select> 
+                            <option selected="selected">Selecciona un tipo de cliente</option>
+                            <option>Empresa</option>
+                            <option>Estudiante</option>
+                            <option>Particular</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <label> Desea suscribirse para recibir novedades? </label>          
+                        <input type="checkbox"/>
+                    </div> 
+                    <div>
+                        <label for="proyecto"> Descripcion del proyecto </label>
+                        <textarea id="proyecto" rows="10" cols="50"></textarea>
+                    </div>
+                    <div class="contenedorBotonesFormulario">
+                        <input class="botonesFormulario" type="submit" value="ENVIAR"/> 
+                        <input class="botonesFormulario" type="reset" value="CANCELAR"/>
+                    </div>
+                </form>
+            </div>
+            <!--Cierre de CONTENT-->  
+            <!--Inicio de FOOTER-->
+            <footer class="footer">
+                <div class="footer__div" >
+                    <h3>Seguinos en la redes</h3>
+                    <a class= "footer__div__a" href="https://www.instagram.com/">
+                        <img class="footer__div__a__img" id="instagram" src="./../assets/instagram.png" alt="instagram" title="instagram"/>
+                    </a>
+                    <a class= "footer__div__a" href="https://es-la.facebook.com/">
+                        <img class="footer__div__a__img" id="facebook" src="./../assets/facebook.png" alt="facebook" title="facebook"/>
+                    </a>
+                    <img class="footer__div__img" id="whatsapp" src="./../assets/whatsapp.png" alt="whatsapp" title="whatsapp"/> 
+                </div>
+            </footer>
+            <!--Cierre de FOOTER-->
+        </section>     
+    </body>
+</html>
