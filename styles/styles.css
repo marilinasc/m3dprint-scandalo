@@ -157,7 +157,7 @@ header {
 }
 
 .contenedorTitulo__tituloPrincipal {
-    font-size: 60px;
+    font-size: 300%;
     color: #FFFFFF;
     text-align: center;
     background-color: rgba(128, 128, 119, 0.322);
