@@ -132,6 +132,15 @@ header {
     border:#0e2c40 solid 1px;
     padding: 7px;   
     border-radius: 5px;
+    animation-name: animacionContacto;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacionContacto {
+    0% {background-color: #0e2c40}
+    50% {background-color: #ba2727}
+    100% {background-color: #7627ba;}
 }
 
 /*ESTILO TITULO PRINCIPAL*/
