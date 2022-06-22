@@ -103,67 +103,7 @@ body {
 @keyframes animacionContacto {
     0% {background-color: #f037a5}
     50% {background-color: #ba2727}
-<<<<<<< HEAD
-    100% {background-color: #7627ba;}
-}
-
-/*ESTILO TITULO PRINCIPAL*/
-.contenedorTitulo {
-    background-image: url(https://creacion3d.com/wp-content/uploads/2019/07/Mejores-Impresoras-3D-calidad-precio.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:flex;
-    justify-content:start;
-    align-items: center;
-    grid-area: tituloPrincipal
-}
-
-.contenedorTitulo__tituloPrincipal {
-    font-size: 300%;
-    color: #FFFFFF;
-    text-align: center;
-    background-color: rgba(128, 128, 119, 0.322);
-}
-
-/*PAGINA TRABAJOS*/
-/*LAYOUT*/
-.trabajos__grid {
-    display:grid;
-    grid-template-areas:
-    "header header"
-    "tituloPrincipal tituloPrincipal"
-    "galeria1 galeria2"
-    "footer footer";
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 80px 800px 800px 200px;
-    Grid-column-gap: 1%
-}
-
-.trabajos__contenedorDescripcion {
-    background-color: #0e2c40;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.trabajos__contenedorDescripcion__contenedorImagen__Imagen {
-    width: 500px;
-}
-
-#tituloTrabajos {
-    grid-area: tituloTrabajos;
-}
-#galeria1 {
-    grid-area: galeria1;
-}
-#galeria2 {
-    grid-area: galeria2;
-=======
     100% {background-color: #1e3163;}
->>>>>>> animaciones
 }
 
 /*PAGINA DISEÑO 3D*/
