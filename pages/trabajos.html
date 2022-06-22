@@ -15,71 +15,96 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--ANIMATE-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
 
     <body>
-        <section class="trabajos__grid">
-            <!--Inicio de HEADER--> 
-            <header>
-                <div class="header__logo">
-                    <a href="./../index.html">
-                        <img id="logo" src="./../assets/logo.PNG" alt="logo" width="200px" title="Logo"/>     
-                    </a>  
+        <!--Inicio de HEADER--> 
+        <header>
+            <nav class="navbar navbar-expand-lg bg-transparent" id="header__navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="./../index.html">
+                    <img id="logo" src="./../assets/logo.PNG" alt="logo" width="200px" title="Logo"/>
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav"> 
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./../index.html">INICIO</a>
+                            </li>   
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./pages/trabajos.html">TRABAJOS</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./pages/diseno3d.html">DISEÑO 3D</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./pages/impresion3d.html">IMPRESION 3D</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./pages/comenzarproyecto.html">COMENZAR PROYECTO</a>
+                            </li>  
+                        </ul>
+                    </div>
                 </div>
-                <ul class="header__ul">
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./../index.html">INICIO</a>
-                    </li>   
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./trabajos.html">TRABAJOS</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./diseno3d.html">DISEÑO 3D</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./impresion3d.html">IMPRESION 3D</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./comenzarproyecto.html">COMENZAR PROYECTO</a>
-                    </li>  
-                </ul>
-            </header>
-            <!--Cierre de HEADER-->
-            <!--Inicio de CONTENT--> 
-            <section class="contenedorTitulo">
-                <h1 class="contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp">Con la Impresión 3D presentamos una solución innovadora para las necesidades de cada cliente.</h1>
-            </section>
-            <aside id="galeria1" class="trabajos__contenedorDescripcion">
-                <div class="trabajos__contenedorDescripcion__contenedorImagen">
-                    <img class="trabajos__contenedorDescripcion__contenedorImagen__Imagen" id="regalo" src="./../assets/regalo.PNG" alt="Regalo Empresarial" title="Regalo Empresarial"/>
+            </nav>
+        </header>
+        <!--Cierre de HEADER-->
+        <!--Inicio de CONTENT--> 
+        <div class="contenedorImagen row">
+            <div class="text-wrap col">
+                <h1 class= "display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp"> Con la Impresión 3D presentamos una solución innovadora para las necesidades de cada cliente </h1>
+            </div>
+        </div>     
+
+          <div class="container">
+            <div class="row g-2">
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-3"><img class="img-fluid" src="./../assets/regalo.PNG" alt="Regalo Empresarial" title="Regalo Empresarial"/></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-3"><img class="img-fluid" src="./../assets/repuesto.PNG" alt="Repuesto" title="Repuesto"/></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-3"><img class="img-fluid" src="./../assets/arquitectura.PNG" alt="Casa impresa en 3D" title="Casa impresa en 3D"/></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-6">
+                <div class="p-3"><img class="img-fluid" src="./../assets/moldes.png" alt="Moldes" title="Moldes"/></div>
+              </div>
+            </div>
+          </div>
+        <!--Cierre de CONTENT-->
+        <!--Inicio de FOOTER-->
+        <footer>
+            <div class="footer row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div>
+                        <h1 class="footer__texto">Parque Industrial</h1>
+                        <h1 class="footer__texto">Ruta Nacional 34</h1>
+                        <h1 class="footer__texto">Sunchales - Santa Fe</h1>
+                    </div>
                 </div>
-                <div class="trabajos__contenedorDescripcion__contenedorImagen">
-                    <img class="trabajos__contenedorDescripcion__contenedorImagen__Imagen" id="repuesto" src="./../assets/repuesto.PNG" alt="Repuesto" title="Repuesto"/>
-                </div>
-            </aside>
-            <aside id="galeria2" class="trabajos__contenedorDescripcion">
-                <div class="trabajos__contenedorDescripcion__contenedorImagen">
-                    <img class="trabajos__contenedorDescripcion__contenedorImagen__Imagen" id="arquitectura" src="./../assets/arquitectura.PNG" alt="Casa impresa en 3D" title="Casa impresa en 3D"/>
-                </div>
-                <div class="trabajos__contenedorDescripcion__contenedorImagen">
-                    <img class="trabajos__contenedorDescripcion__contenedorImagen__Imagen" id="moldes" src="./../assets/moldes.png" alt="Moldes" title="Moldes"/>
-                </div>
-            </aside>
-            <!--Cierre de CONTENT-->
-            <!--Inicio de FOOTER-->  
-            <footer class="footer">
-                <div class="footer__div" >
-                    <h3>Seguinos en la redes</h3>
+                <div class="col">
                     <a class= "footer__div__a" href="https://www.instagram.com/">
                         <img class="footer__div__a__img" id="instagram" src="./../assets/instagram.png" alt="instagram" title="instagram"/>
                     </a>
+                </div>
+                <div class="col">
                     <a class= "footer__div__a" href="https://es-la.facebook.com/">
                         <img class="footer__div__a__img" id="facebook" src="./../assets/facebook.png" alt="facebook" title="facebook"/>
                     </a>
                     <img class="footer__div__img" id="whatsapp" src="./../assets/whatsapp.png" alt="whatsapp" title="whatsapp"/> 
                 </div>
-            </footer>
-            <!--Cierre de FOOTER--> 
-        </section>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h1 class="footer__texto" >Reciba nuestras novedades</h1>
+                </div>    
+            </div>
+        </footer>
+        <!--Cierre de FOOTER-->  
+        <!--BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>    
 </html>
