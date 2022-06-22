@@ -51,7 +51,6 @@ body {
 .index__tituloDescripcion {
     text-align: center;
     padding: 10%;
-    font-size: 200%
 }
 
 .index__contenedorLink {
@@ -84,7 +83,6 @@ body {
 .index__contenedorContacto__tituloContacto{
     text-align: center;
     padding: 5%;
-    font-size: 200%;
     color:#FFFFFF;
 }
 
@@ -106,49 +104,23 @@ body {
     100% {background-color: #1e3163;}
 }
 
-/*PAGINA DISEÑO 3D*/
-.diseño3d__contenedorDescripcion__contenedorPaso {
-    background-color: #0e2c40;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10%;
+/*PAGINA DISEÑO 3D - IMPRESION 3D*/
+.card__texto {
+    text-align: center;
 }
-
-.diseño3d__contenedorDescripcion__contenedorPaso__paso {
-    color: #FFFFFF; 
-    font-size:200%;
-}
-
-.diseño3d__contenedorDescripcion__contenedorPaso__descripcionPaso {
-    color: #FFFFFF; 
-    font-size:100%px;
-    text-align: left;
-}
-
-/*PAGINA IMPRESION 3D*/
-.impresion3d__contenedorDescripcion__contenedorPaso {
-    background-color: #0e2c40;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 10%;
-}
-
-.impresion3d__contenedorDescripcion__contenedorPaso__paso {
-    color: #FFFFFF; 
-    font-size:200%;
-}
-
-.impresion3d__contenedorDescripcion__contenedorPaso__descripcionPaso {
-    color: #FFFFFF; 
-    font-size:100%px;
-    text-align: left;
+.contenedor__cards {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%
 }
 
 /*PAGINA COMENZAR PROYECTO*/
-.comenzarProyecto__ubicacion {
-    padding: 10%
+.contenedor__contacto {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%   
 }
 
 iframe{
@@ -157,47 +129,24 @@ iframe{
 }
 
 .comenzarProyecto__contenedorFormulario {
-    padding: 10%;
+    padding: 5%;
 }
 
-.comenzarProyecto__contenedorFormulario__formulario {
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.comenzarProyecto__contenedorFormulario__tituloFormulario {
-    font-size: 200%;
-}
-
-.comenzarProyecto__contenedorFormulario__datos {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.contenedorBotonesFormulario{
-    display:flex;
-    justify-content: space-around;
-}
-
-.contenedorBotonesFormulario :hover {
-    color: #FFFFFF;
-    background-color:#0e2c40;
-}
-.botonesFormulario {
-    text-decoration: none;
-    color: #0e2c40; 
+.formularioBoton {
+    color: #FFFFFF; 
     font-size: 100%;
-    border:#0e2c40 solid 1px;
-    padding: 7px;   
+    border:#f037a5 solid 1px;
+    padding: 7px;
     border-radius: 5px;
+    background-color:#f037a5;
 }
 
-/*Estilos para FOOTER*/
+.contenedorBoton :hover{
+    color: #f037a5;
+    background-color:#FFFFFF;
+}
+
+/*FOOTER*/
 .footer {
     background-color: #0e2c40;
     padding: 10%;

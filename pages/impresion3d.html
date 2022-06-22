@@ -15,67 +15,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--ANIMATE-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     </head>
 
     <body>
-        <section class="impresion3d__grid">
-            <!--Inicio de HEADER--> 
-            <header>
-                <div class="header__logo">
-                    <a href="./../index.html">
-                        <img id="logo" src="./../assets/logo.PNG" alt="logo" width="200px" title="Logo"/>     
-                    </a>  
+        <!--Inicio de HEADER--> 
+        <header>
+            <nav class="navbar navbar-expand-lg bg-transparent" id="header__navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./../index.html">
+                        <img id="logo" src="./../assets/logo.PNG" alt="logo" width="200px" title="Logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav"> 
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./../index.html">INICIO</a>
+                            </li>   
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./trabajos.html">TRABAJOS</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./diseno3d.html">DISEÑO 3D</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./impresion3d.html">IMPRESION 3D</a>
+                            </li>  
+                            <li class="nav-item" id="header__navbar__item">
+                                <a class="nav-link active" id="header__navbar__a" aria-current="page" href="./comenzarproyecto.html">COMENZAR PROYECTO</a>
+                            </li>  
+                        </ul>
+                    </div>
                 </div>
-                <ul class="header__ul">
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./../index.html">INICIO</a>
-                    </li>   
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./trabajos.html">TRABAJOS</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./diseno3d.html">DISEÑO 3D</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./impresion3d.html">IMPRESION 3D</a>
-                    </li>  
-                    <li class="header__ul__li">
-                        <a class="header__ul__li__a" href="./comenzarproyecto.html">COMENZAR PROYECTO</a>
-                    </li>  
-                </ul>
-            </header>
-            <!--Cierre de HEADER-->
-            <!--Inicio de CONTENT--> 
-            <section class="contenedorTitulo">
-                <h1 class="contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp">La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas en pequeña o gran escala</h1>
-            </section>
-            <div class="impresion3d__contenedorDescripcion__contenedorPaso" id="paso1">
-                <h2 class="impresion3d__contenedorDescripcion__contenedorPaso__paso"> PASO 1 </h2>
-                <h3 class="impresion3d__contenedorDescripcion__contenedorPaso__descripcionPaso" > Envianos tu archivo 3D o podemos asesorarte y modelarlo nosotros.</h3>     
+            </nav>
+        </header>
+        <!--Cierre de HEADER-->
+        <!--Inicio de CONTENT-->
+        <div class="contenedorImagen row">
+            <div class="text-wrap col">
+                <h1 class= "display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp">La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas </h1>
             </div>
-            <div class="impresion3d__contenedorDescripcion__contenedorPaso" id="paso2">
-                <h2 class="impresion3d__contenedorDescripcion__contenedorPaso__paso"> PASO 2 </h2>
-                <h3 class="impresion3d__contenedorDescripcion__contenedorPaso__descripcionPaso"> Con el modelo 3D listo, ponemos en funcionamiento nuestras impresoras. </h3>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h1 class="card__texto display-3"> ¿Como trabajamos? </h1>
+                </div>
             </div>
-            <div class="impresion3d__contenedorDescripcion__contenedorPaso" id="paso3">
-                <h2 class="impresion3d__contenedorDescripcion__contenedorPaso__paso"> PASO 3 </h2>
-                <h3 class="impresion3d__contenedorDescripcion__contenedorPaso__descripcionPaso"> Entregamos en cualquier lugar del país, en el tiempo y forma acordados </h3>
+        </div>
+
+        <div class="contenedor__cards row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class=" card h-100">
+                    <img src="./../assets/TrabajoPaso1.png" class="card__imagen card-img-top img-fluid" alt="paso1">
+                    <div class="card-body">
+                        <h1 class="display-4 card__texto card-title"> PASO 1</h1>
+                        <p class="fs-4 card__texto card-text">Envianos tu archivo 3D o podemos asesorarte y modelarlo nosotros. </p>
+                    </div>
+                </div>
             </div>
-            <!--Cierre de CONTENT-->  
-            <!--Inicio de FOOTER-->
-            <footer class="footer">
-                <div class="footer__div" >
-                    <h3>Seguinos en la redes</h3>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="./../assets/TrabajoPaso2.png" class="card__imagen card-img-top" alt="paso2">
+                    <div class="card-body">
+                        <h1 class="display-4 card__texto card-title"> PASO 2</h1>
+                        <p class="fs-4 card__texto card-text"> Con el modelo 3D listo, ponemos en funcionamiento nuestras impresoras. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <img src="./../assets/TrabajoPaso3.png" class="card-img-top img-fluid" alt="paso3">
+                    <div class="card-body">
+                        <h1 class="display-4 card__texto card-title">PASO 3</h1>
+                        <p class="fs-4 card__texto card-text">Entregamos en cualquier lugar del país, en el tiempo y forma acordados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cierre de CONTENT-->  
+        <!--Inicio de FOOTER-->
+        <footer>
+            <div class="footer row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div>
+                        <h1 class="footer__texto">Parque Industrial</h1>
+                        <h1 class="footer__texto">Ruta Nacional 34</h1>
+                        <h1 class="footer__texto">Sunchales - Santa Fe</h1>
+                    </div>
+                </div>
+                <div class="col">
                     <a class= "footer__div__a" href="https://www.instagram.com/">
                         <img class="footer__div__a__img" id="instagram" src="./../assets/instagram.png" alt="instagram" title="instagram"/>
                     </a>
+                </div>
+                <div class="col">
                     <a class= "footer__div__a" href="https://es-la.facebook.com/">
                         <img class="footer__div__a__img" id="facebook" src="./../assets/facebook.png" alt="facebook" title="facebook"/>
                     </a>
                     <img class="footer__div__img" id="whatsapp" src="./../assets/whatsapp.png" alt="whatsapp" title="whatsapp"/> 
                 </div>
-            </footer>
-            <!--Cierre de FOOTER-->       
-        </section>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <h1 class="footer__texto" >Reciba nuestras novedades</h1>
+                </div>    
+            </div>
+        </footer>
+        <!--Cierre de FOOTER-->
+        <!--BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>    
 </html>
