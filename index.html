@@ -54,62 +54,65 @@
         </header>
         <!--Cierre de HEADER-->
         <!--Inicio de CONTENT-->
-        <div class="contenedorImagen row">
-            <div class="text-wrap col">
-                <h1 class= "display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp"> Imprimimos todas tus ideas en 3D</h1>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
-                <div>
-                    <h1 class="display-6 index__tituloDescripcion"> El diseño 3D es nuestra herramienta para transformar tus ideas y convertirlas en ese objeto que buscás </h1>
-                </div>
-                <div class="index__contenedorLink">
-                    <a class="index__contenedorLink__link" href="./pages/diseno3d.html"> VER MAS </a>
+        <div class= "container-fluid">
+            <div class="contenedorImagen row">
+                <div class="text-wrap col">
+                    <h1 class="display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp"> Imprimimos todas tus ideas en 3D</h1>
                 </div>
             </div>
 
-            <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
-                <div>
-                    <h1 class="display-6 index__tituloDescripcion"> La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas</h1>
+            <div class= "row">
+                <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
+                    <div>
+                        <h1 class="display-6 index__tituloDescripcion"> El diseño 3D es nuestra herramienta para transformar tus ideas y convertirlas en ese objeto que buscás </h1>
+                    </div>
+                    <div class="index__contenedorLink">
+                        <a class="index__contenedorLink__link" href="./pages/diseno3d.html"> VER MAS </a>
+                    </div>
                 </div>
-                <div class="index__contenedorLink">
-                    <a class="index__contenedorLink__link" href="./pages/impresion3d.html"> VER MAS </a>
+
+                <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
+                    <div>
+                        <h1 class="display-6 index__tituloDescripcion"> La impresión 3D es una nueva forma de manufactura que expande los límites de la producción de piezas</h1>
+                    </div>
+                    <div class="index__contenedorLink">
+                        <a class="index__contenedorLink__link" href="./pages/impresion3d.html"> VER MAS </a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class= "row">
+                <div class="index__contenedorContacto col">
+                    <div>
+                        <h1 class="display-5 index__contenedorContacto__tituloContacto"> No pierdas tiempo, envianos tu proyecto y recibí tu presupuesto al instante </h1>
+                    </div>
+                    <div class="index__contenedorContacto__contenedorLink">
+                        <a class="index__contenedorContacto__contenedorLink__link" href="./pages/comenzarproyecto.html"> COMENZAR PROYECTO </a>
+                    </div>
                 </div>
             </div>
 
-        <div class="row">
-            <div class="index__contenedorContacto col">
-                <div>
-                    <h1 class="display-5 index__contenedorContacto__tituloContacto"> No pierdas tiempo, envianos tu proyecto y recibí tu presupuesto al instante </h1>
+            <div class= "row">
+                <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
+                    <div>
+                        <h1 class="display-6 index__tituloDescripcion"> Presentamos una solución innovadora para las necesidades de cada cliente </h1>
+                    </div>
+                    <div class="index__contenedorLink">
+                        <a class="index__contenedorLink__link" href="./pages/trabajos.html"> VER MAS </a>
+                    </div>
                 </div>
-                <div class="index__contenedorContacto__contenedorLink">
-                    <a class="index__contenedorContacto__contenedorLink__link" href="./pages/comenzarproyecto.html"> COMENZAR PROYECTO </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
-                <div>
-                    <h1 class="display-6 index__tituloDescripcion"> Presentamos una solución innovadora para las necesidades de cada cliente </h1>
-                </div>
-                <div class="index__contenedorLink">
-                    <a class="index__contenedorLink__link" href="./pages/trabajos.html"> VER MAS </a>
-                </div>
-            </div>
-            <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
-                <div>
-                    <img src="./assets/trabajo.png" class="img-fluid" alt="imagenTrabajos">
+                <div class="index__contenedorDescripcion col-sm-12 col-md-12 col-lg-6">
+                    <div>
+                        <img src="./assets/trabajo.png" class="img-fluid" alt="imagenTrabajos">
+                    </div>
                 </div>
             </div>
         </div>
         <!--Cierre de CONTENT-->  
 
         <!--Inicio de FOOTER-->
-        <footer>
-            <div class="footer row">
+        <footer class= "container-fluid">
+            <div class= "footer row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div>
                         <h1 class="footer__texto">Parque Industrial</h1>
@@ -129,8 +132,12 @@
                     <img class="footer__div__img" id="whatsapp" src="./assets/whatsapp.png" alt="whatsapp" title="whatsapp"/> 
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <h1 class="footer__texto" >Reciba nuestras novedades</h1>
-                </div>    
+                    <h1 class="footer__texto">Reciba nuestras novedades</h1>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ingrese Email">
+                        <button class="formularioBoton" type="button" id="button-addon2">SUSCRIBIRSE</button>
+                    </div>
+                </div>        
             </div>
         </footer>
         <!--Cierre de FOOTER-->

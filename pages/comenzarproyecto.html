@@ -52,57 +52,59 @@
             </nav>
         </header>
         <!--Cierre de HEADER-->
-        <!--Inicio de CONTENT--> 
-        <div class="contenedorImagen row">
-            <div class="text-wrap col">
-                <h1 class= "display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp">El primer paso para comenzar tu proyecto, es ponerte en contacto con nosotros</h1>
+        <!--Inicio de CONTENT-->
+        <div class= "container-fluid">
+            <div class="contenedorImagen row">
+                <div class="text-wrap col">
+                    <h1 class= "display-2 contenedorTitulo__tituloPrincipal animate__animated animate__slideInUp">El primer paso para comenzar tu proyecto, es ponerte en contacto con nosotros</h1>
+                </div>
+            </div>
+
+            <div class="contenedor__contacto row">
+                <div class="comenzarProyecto__ubicacion col-sm-12 col-md-6 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.6374753876107!2d-61.54134118546606!3d-30.952687981071335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943545164070c9a7%3A0xb37587cf045ca7d3!2sParque%20Industrial!5e0!3m2!1ses-419!2sar!4v1655037627449!5m2!1ses-419!2sar"></iframe>
+                </div>
+                <div class="comenzarProyecto__contenedorFormulario col-sm-12 col-md-6 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputAddress" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="mb-3">  
+                            <label for="inputState" class="form-label">Tipo de cliente</label>
+                            <select id="inputState" class="form-select">                
+                                <option selected="selected">Selecciona un tipo de cliente</option>
+                                <option>Empresa</option>
+                                <option>Estudiante</option>
+                                <option>Particular</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <label class="form-check-label" for="gridCheck">
+                                Suscribirse para recibir novedades
+                                </label>
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            </div>
+                        </div>
+                        <div class= "mb-3 input-group">
+                            <span class="input-group-text"> Descripcion del proyecto </span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="formularioBoton"> ENVIAR </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-        <div class="contenedor__contacto row">
-            <div class="comenzarProyecto__ubicacion col-sm-12 col-md-6 col-lg-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.6374753876107!2d-61.54134118546606!3d-30.952687981071335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943545164070c9a7%3A0xb37587cf045ca7d3!2sParque%20Industrial!5e0!3m2!1ses-419!2sar!4v1655037627449!5m2!1ses-419!2sar"></iframe>
-            </div>
-            <div class="comenzarProyecto__contenedorFormulario col-sm-12 col-md-6 col-lg-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="inputEmail4" class="form-label">Nombre y Apellido</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputAddress" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="inputAddress">
-                    </div>
-                    <div class="mb-3">  
-                        <label for="inputState" class="form-label">Tipo de cliente</label>
-                        <select id="inputState" class="form-select">                
-                            <option selected="selected">Selecciona un tipo de cliente</option>
-                            <option>Empresa</option>
-                            <option>Estudiante</option>
-                            <option>Particular</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <label class="form-check-label" for="gridCheck">
-                            Suscribirse para recibir novedades
-                            </label>
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        </div>
-                    </div>
-                    <div class= "mb-3 input-group">
-                        <span class="input-group-text"> Descripcion del proyecto </span>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="formularioBoton"> ENVIAR </button>
-                    </div>
-                </form>
-            </div>
-        </div>    
         <!--Cierre de CONTENT-->  
         <!--Inicio de FOOTER-->
-        <footer>
+        <footer class= "container-fluid">
             <div class="footer row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <div>
@@ -124,6 +126,10 @@
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <h1 class="footer__texto">Reciba nuestras novedades</h1>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Ingrese Email">
+                        <button class="formularioBoton" type="button" id="button-addon2">SUSCRIBIRSE</button>
+                    </div>
                 </div>    
             </div>
         </footer>    

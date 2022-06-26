@@ -24,14 +24,23 @@ body {
 
 /*TITULO PRINCIPAL*/
 .contenedorImagen{
-    background-image: url(https://creacion3d.com/wp-content/uploads/2019/07/Mejores-Impresoras-3D-calidad-precio.jpg);
+    background-image: url(./../assets/ImagenPrincipal.PNG);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     padding-top: 10%;
     padding-bottom: 20%;
-    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedorImagen {
+        background-attachment: scroll;
+    }
 }
 
 .contenedorTitulo__tituloPrincipal {
@@ -104,6 +113,38 @@ body {
     100% {background-color: #1e3163;}
 }
 
+/*PAGINA TRABAJOS*/
+.trabajos__contenedorImagen {
+    position: relative;
+    margin: 5%;
+}
+
+.contenedorImagen__contenedortitulo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    transition: .5s;
+    background-color: rgba(26, 26, 24, 0.445);
+  }
+  
+  .trabajos__contenedorImagen:hover .contenedorImagen__contenedortitulo {
+    opacity: 1;
+  }
+  
+  .contenedorImagen__contenedortitulo__titulo {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 /*PAGINA DISEÑO 3D - IMPRESION 3D*/
 .card__texto {
     text-align: center;
@@ -150,6 +191,8 @@ iframe{
 .footer {
     background-color: #0e2c40;
     padding: 10%;
+    padding-left: 15%;
+    padding-right: 20%;
 }
 
 .footer__texto {
