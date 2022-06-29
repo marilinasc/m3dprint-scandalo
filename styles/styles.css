@@ -1,214 +1,207 @@
+@charset "UTF-8";
 /*RESET*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 /*Estilo general de la pagina*/
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*Estilos para HEADER*/
 #header__navbar {
-    background-color: #FFFFFF;
-    padding: 2%;    
+  background-color: #FFFFFF;
+  padding: 2%;
 }
-
-#header__navbar__a {
-    color: #2d46b9; 
-    font-size: 120%;
+#header__navbar #header__navbar__item :hover {
+  color: #f037a5;
 }
-#header__navbar__item :hover {
-    color: #f037a5;
+#header__navbar #header__navbar__a {
+  color: #2d46b9;
+  font-size: 120%;
 }
 
 /*TITULO PRINCIPAL*/
-.contenedorImagen{
-    background-image: url(./../assets/ImagenPrincipal.PNG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.contenedorImagen {
+  background-image: url(./../assets/ImagenPrincipal.PNG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
-    .contenedorImagen {
-        background-attachment: scroll;
-    }
+  .contenedorImagen {
+    background-attachment: scroll;
+  }
 }
-
 .contenedorTitulo__tituloPrincipal {
-    color: #FFFFFF;
-    background-color: rgba(128, 128, 119, 0.445);
-    padding: 5%;
-    text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(128, 128, 119, 0.445);
+  padding: 5%;
+  text-align: center;
 }
 
 /*PAGINA DE INICIO*/
 .index__contenedorDescripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
 }
-.index__tituloDescripcion {
-    text-align: center;
-    padding: 10%;
-}
-
-.index__contenedorLink {
-    background-color:#FFFFFF;
-}
-
-.index__contenedorLink :hover {
-    color: #f037a5;
-    background-color:#FFFFFF;
+.index__contenedorDescripcion .index__tituloDescripcion {
+  text-align: center;
+  padding: 10%;
 }
 
 .index__contenedorLink__link {
-    text-decoration: none;
-    color: #FFFFFF; 
-    font-size: 100%;
-    border:#f037a5 solid 1px;
-    padding: 7px;
-    border-radius: 5px;
-    background-color:#f037a5;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 100%;
+  border: #f037a5 solid 1px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #f037a5;
+}
+.index__contenedorLink__link:hover {
+  color: #f037a5;
+  background-color: #FFFFFF;
 }
 
 .index__contenedorContacto {
-    background-color:#f037a5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5%;
+  background-color: #f037a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
 }
-
-.index__contenedorContacto__tituloContacto{
-    text-align: center;
-    padding: 5%;
-    color:#FFFFFF;
+.index__contenedorContacto .index__contenedorContacto__tituloContacto {
+  text-align: center;
+  padding: 5%;
+  color: #FFFFFF;
 }
 
 .index__contenedorContacto__contenedorLink__link {
-    text-decoration: none;
-    color: #FFFFFF; 
-    font-size: 100%;
-    border:#FFFFFF solid 1px;
-    padding: 7px;   
-    border-radius: 5px;
-    animation-name: animacionContacto;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 100%;
+  border: #FFFFFF solid 1px;
+  padding: 7px;
+  border-radius: 5px;
+  animation-name: animacionContacto;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes animacionContacto {
-    0% {background-color: #f037a5}
-    50% {background-color: #ba2727}
-    100% {background-color: #1e3163;}
+  0% {
+    background-color: #f037a5;
+  }
+  50% {
+    background-color: #ba2727;
+  }
+  100% {
+    background-color: #1e3163;
+  }
 }
-
 /*PAGINA TRABAJOS*/
 .trabajos__contenedorImagen {
-    position: relative;
-    margin: 5%;
+  position: relative;
+  margin: 5%;
 }
-
-.contenedorImagen__contenedortitulo {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-    transition: .5s;
-    background-color: rgba(26, 26, 24, 0.445);
-  }
-  
-  .trabajos__contenedorImagen:hover .contenedorImagen__contenedortitulo {
-    opacity: 1;
-  }
-  
-  .contenedorImagen__contenedortitulo__titulo {
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.trabajos__contenedorImagen:hover .contenedorImagen__contenedortitulo {
+  opacity: 1;
+}
+.trabajos__contenedorImagen .contenedorImagen__contenedortitulo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0%;
+  transition: 0.5s;
+  background-color: rgba(26, 26, 24, 0.445);
+}
+.trabajos__contenedorImagen .contenedorImagen__contenedortitulo .contenedorImagen__contenedortitulo__titulo {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 /*PAGINA DISEÑO 3D - IMPRESION 3D*/
 .card__texto {
-    text-align: center;
+  text-align: center;
 }
+
 .contenedor__cards {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /*PAGINA COMENZAR PROYECTO*/
 .contenedor__contacto {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%   
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
-
-iframe{
-    width: 100%;
-    height: 100%;
+.contenedor__contacto iframe {
+  width: 100%;
+  height: 100%;
 }
-
-.comenzarProyecto__contenedorFormulario {
-    padding: 5%;
+.contenedor__contacto .comenzarProyecto__contenedorFormulario {
+  padding: 5%;
 }
 
 .formularioBoton {
-    color: #FFFFFF; 
-    font-size: 100%;
-    border:#f037a5 solid 1px;
-    padding: 7px;
-    border-radius: 5px;
-    background-color:#f037a5;
+  color: #FFFFFF;
+  font-size: 100%;
+  border: #f037a5 solid 1px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #f037a5;
 }
-
-.contenedorBoton :hover{
-    color: #f037a5;
-    background-color:#FFFFFF;
+.formularioBoton:hover {
+  color: #f037a5;
+  background-color: #FFFFFF;
 }
 
 /*FOOTER*/
 .footer {
-    background-color: #0e2c40;
-    padding: 10%;
-    padding-left: 15%;
-    padding-right: 20%;
+  background-color: #0e2c40;
+  padding: 10%;
+  padding-left: 15%;
+  padding-right: 20%;
+}
+.footer .footer__texto {
+  color: #FFFFFF;
+  font-size: 100%;
+}
+.footer .footer__div__a__img {
+  width: 50px;
+  height: 50px;
+}
+.footer .footer__div__img {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
 
-.footer__texto {
-    color: #FFFFFF;
-    font-size: 100%;
-}
-
-.footer__div__a__img {
-    width: 50px;
-    height: 50px;
-}
-
-.footer__div__img { 
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom:0px;
-    right:0px;
-}
+/*# sourceMappingURL=styles.css.map */
