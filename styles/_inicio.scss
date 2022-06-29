@@ -1,0 +1,55 @@
+/*PAGINA DE INICIO*/
+.index__contenedorDescripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  .index__tituloDescripcion {
+      text-align: center;
+      padding: 10%;
+  }
+}
+
+.index__contenedorLink__link {
+  text-decoration: none;
+  color: $colorGenerico; 
+  font-size: 100%;
+  border: $bordeBoton;
+  padding: 7px;
+  border-radius: 5px;
+  background-color:$colorLink;
+  &:hover {
+      color: $colorLink;
+      background-color:$colorGenerico;
+  }
+}
+
+.index__contenedorContacto {
+  background-color: $colorLink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  .index__contenedorContacto__tituloContacto{
+      text-align: center;
+      padding: 5%;
+      color:#FFFFFF;
+  }    
+}
+
+.index__contenedorContacto__contenedorLink__link {
+  text-decoration: none;
+  color: $colorGenerico; 
+  font-size: 100%;
+  padding: 7px;   
+  border-radius: 5px;
+  animation-name: animacionContacto;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacionContacto {
+  0% {background-color: #f037a5}
+  50% {background-color: #ba2727}
+  100% {background-color: #1e3163;}
+}

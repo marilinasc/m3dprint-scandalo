@@ -1,0 +1,29 @@
+/*PAGINA TRABAJOS*/
+.trabajos__contenedorImagen {
+    position: relative;
+    margin: 5%;
+    &:hover .contenedorImagen__contenedortitulo {
+        opacity: 1;
+    }
+    .contenedorImagen__contenedortitulo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0%;
+        transition: .5s;
+        background-color: $colorFondoTitulo;
+        
+        .contenedorImagen__contenedortitulo__titulo {
+            color: $colorGenerico;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+}
