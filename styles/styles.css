@@ -15,46 +15,56 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .index__contenedorDescripcion .index__tituloDescripcion {
   text-align: center;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
-.index__contenedorLink__link {
+.index__contenedorLink__link, .formularioBoton, .index__contenedorContacto__contenedorLink__link {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 100%;
   border: #f037a5 solid 1px;
-  padding: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border-radius: 5px;
   background-color: #f037a5;
 }
-.index__contenedorLink__link:hover {
+.index__contenedorLink__link:hover, .formularioBoton:hover, .index__contenedorContacto__contenedorLink__link:hover {
   color: #f037a5;
   background-color: #FFFFFF;
 }
 
 .index__contenedorContacto {
-  background-color: #f037a5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #f037a5;
 }
 .index__contenedorContacto .index__contenedorContacto__tituloContacto {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
-  padding: 5%;
   color: #FFFFFF;
 }
 
 .index__contenedorContacto__contenedorLink__link {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 100%;
-  padding: 7px;
-  border-radius: 5px;
   animation-name: animacionContacto;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -71,6 +81,81 @@ body {
     background-color: #1e3163;
   }
 }
+/*HEADER*/
+#header__navbar {
+  background-color: #FFFFFF;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#header__navbar #header__navbar__item :hover {
+  color: #f037a5;
+}
+
+#header__navbar #header__navbar__a {
+  color: #2d46b9;
+  font-size: 120%;
+}
+
+/*TITULO PRINCIPAL*/
+.contenedorImagen {
+  background-image: url(./../assets/ImagenPrincipal.PNG);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorImagen {
+    background-attachment: scroll;
+  }
+}
+.contenedorTitulo__tituloPrincipal {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #FFFFFF;
+  background-color: rgba(26, 26, 24, 0.445);
+  text-align: center;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: #0e2c40;
+  padding-left: 15%;
+  padding-right: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.footer__texto {
+  color: #FFFFFF;
+  font-size: 100%;
+}
+
+.footer__div__a__img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__div__img {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
 /*PAGINA TRABAJOS*/
 .trabajos__contenedorImagen {
   position: relative;
@@ -124,88 +209,15 @@ body {
   height: 100%;
 }
 .contenedor__contacto .comenzarProyecto__contenedorFormulario {
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.formularioBoton {
-  color: #FFFFFF;
-  font-size: 100%;
-  border: #f037a5 solid 1px;
-  padding: 7px;
-  border-radius: 5px;
-  background-color: #f037a5;
-}
 .formularioBoton:hover {
   color: #f037a5;
   background-color: #FFFFFF;
-}
-
-/*HEADER*/
-#header__navbar {
-  background-color: #FFFFFF;
-  padding: 2%;
-}
-
-#header__navbar #header__navbar__item :hover {
-  color: #f037a5;
-}
-
-#header__navbar #header__navbar__a {
-  color: #2d46b9;
-  font-size: 120%;
-}
-
-/*TITULO PRINCIPAL*/
-.contenedorImagen {
-  background-image: url(./../assets/ImagenPrincipal.PNG);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 20%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  .contenedorImagen {
-    background-attachment: scroll;
-  }
-}
-.contenedorTitulo__tituloPrincipal {
-  color: #FFFFFF;
-  background-color: rgba(26, 26, 24, 0.445);
-  padding: 5%;
-  text-align: center;
-}
-
-/*FOOTER*/
-.footer {
-  background-color: #0e2c40;
-  padding: 10%;
-  padding-left: 15%;
-  padding-right: 20%;
-}
-
-.footer .footer__texto {
-  color: #FFFFFF;
-  font-size: 100%;
-}
-
-.footer .footer__div__a__img {
-  width: 50px;
-  height: 50px;
-}
-
-.footer .footer__div__img {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,73 +8,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-@import "./variables";
+@import "./estilosGenerales";
 @import "./inicio";
+@import "./header";
+@import "./tituloPrincipal";
+@import "./footer";
 @import "./trabajos";
 @import "./diseno3d";
 @import "./comenzarProyecto";
-
-/*HEADER*/
-#header__navbar {
-    background-color: $colorGenerico;
-    padding: 2%;
-}
-#header__navbar #header__navbar__item :hover {
-    color: $colorLink;
-}
-#header__navbar #header__navbar__a {
-    color: $colorTextoNavbar;
-    font-size: 120%;
-}
-
-/*TITULO PRINCIPAL*/
-.contenedorImagen{
-    background-image: url(./../assets/ImagenPrincipal.PNG);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 10%;
-    padding-bottom: 20%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-    .contenedorImagen {
-        background-attachment: scroll;
-    }
-}
-
-.contenedorTitulo__tituloPrincipal {
-    color: $colorGenerico;
-    background-color: $colorFondoTitulo;
-    padding: 5%;
-    text-align: center;
-}
-
-/*FOOTER*/
-.footer {
-    background-color: $colorFondoFooter;
-    padding: 10%;
-    padding-left: 15%;
-    padding-right: 20%;
-}
-  .footer .footer__texto {
-    color: $colorGenerico;
-    font-size: 100%;
-}
-  .footer .footer__div__a__img {
-    width: 50px;
-    height: 50px;
-}
-  .footer .footer__div__img {
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-}
-

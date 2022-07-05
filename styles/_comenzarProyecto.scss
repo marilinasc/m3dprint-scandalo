@@ -1,25 +1,17 @@
-
 /*PAGINA COMENZAR PROYECTO*/
+
 .contenedor__contacto {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  @include padding (10%, 10%, 5%,5%);
   iframe{
       width: 100%;
       height: 100%;
   }
   .comenzarProyecto__contenedorFormulario {
-      padding: 5%;
+    @include padding (5%,5%,5%,5%);
   }   
 }
 .formularioBoton {
-  color:$colorGenerico; 
-  font-size: 100%;
-  border: $bordeBoton;
-  padding: 7px;
-  border-radius: 5px;
-  background-color:$colorLink;
+  @extend .index__contenedorLink__link;
   &:hover {
       color: $colorLink;
       background-color:$colorGenerico;
