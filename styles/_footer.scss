@@ -6,6 +6,7 @@
 }
   .footer__texto {
     color: $colorGenerico;
+    font-family: $fontFamily;
     font-size: map-get($estilos, tfuente);
 }
   .footer__div__a__img {

@@ -1,6 +1,8 @@
 /*PAGINA DISEÑO 3D - IMPRESION 3D*/
 .card__texto {
     text-align: map-get($estilos,centro);
+    font-family: $fontFamily;
+    @include padding (0%, 0%, 5%, 0%);
 }
 .contenedor__cards {
     @include padding (10%, 10%, 5%, 5%);

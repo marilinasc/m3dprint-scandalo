@@ -16,9 +16,18 @@
 .index__contenedorDescripcion {
   @include display-flex ();
   @include padding (5%,5%,5%,5%);
+    .index__titulo {
+      text-align: map-get($estilos, centro);
+      font-weight: map-get($estilos, negrita);
+      font-size: map-get($estilos, tfuente3);
+      font-family: $fontFamily;
+    }
     .index__tituloDescripcion {
       text-align: map-get($estilos, centro);
-      @include padding (10%,10%,10%,10%);
+      font-size: map-get($estilos, tfuente2);
+      font-family: $fontFamily;
+      @include padding (10%,10%,5%,5%);
+  
   }
 }
 
@@ -44,6 +53,7 @@
       @include padding (5%,5%,5%,5%);
       text-align: map-get($estilos, centro);
       color: $colorGenerico;
+      font-family: $fontFamily;
   }    
 }
 

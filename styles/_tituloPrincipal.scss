@@ -22,6 +22,7 @@
 
 .contenedorTitulo__tituloPrincipal {
     @include padding (5%,5%,5%,5%);
+    font-family: $fontFamily;
     color: $colorGenerico;
     background-color: $colorFondoTitulo;
     text-align: map-get($estilos,centro);
