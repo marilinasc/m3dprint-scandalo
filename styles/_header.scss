@@ -3,6 +3,7 @@
     background-color: $colorGenerico;
     @include padding (2%,2%,2%,2%);
 }
+
 #header__navbar #header__navbar__item :hover {
     color: $colorLink;
 }
